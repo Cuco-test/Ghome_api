@@ -49,4 +49,3 @@ if __name__ == "__main__":
     cases = add_case()
     run_case(cases)
     # sendemail(reportpath)
-    #test
