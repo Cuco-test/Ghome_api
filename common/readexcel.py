@@ -1,7 +1,10 @@
 # coding:utf-8
-from Ghome_api.common.logger import Log
-log = Log()
+
 import xlrd
+from common.Logs import Log
+log = Log(__name__)
+logger = log.Logger
+
 class ExcelUtil():
     def __init__(self, excelPath, sheetName="Sheet1"):
         self.data = xlrd.open_workbook(excelPath)
@@ -15,7 +18,7 @@ class ExcelUtil():
 
     def dict_data(self):
         if self.rowNum <= 1:
-            print("总行数小于1")
+            logger.info("总行数小于1")
         else:
             r = []
             j = 1
@@ -31,7 +34,8 @@ class ExcelUtil():
             return r
 
 if __name__ == "__main__":
-    filepath = "D:\\project\\Ghome_api\\GHome_api.xlsx"
+    filepath = "../case/GHome_api.xlsx"
     sheetName = "Sheet1"
     data = ExcelUtil(filepath, sheetName)
     print(data.dict_data())
+    print(type(data.dict_data()[0]))

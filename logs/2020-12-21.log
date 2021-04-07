@@ -1,0 +1,759 @@
+Mon, 21 Dec 2020 16:13:36-run_Ghome_api_test.py-run_Ghome_api_test.py-[line:42]-INFO-[日志信息]: 开始执行脚本
+Mon, 21 Dec 2020 16:13:37-run_Ghome_api_test.py-mysql.py-[line:21]-INFO-[日志信息]: -----------------------连接数据库----------------------------------
+Mon, 21 Dec 2020 16:13:37-run_Ghome_api_test.py-mysql.py-[line:61]-INFO-[日志信息]: -----------------------断开数据库----------------------------------
+Mon, 21 Dec 2020 16:13:37-run_Ghome_api_test.py-run_Ghome_api_test.py-[line:30]-INFO-[日志信息]: 测试报告生成地址：D:\project\Ghome_api\report\result.html
+Mon, 21 Dec 2020 16:13:37-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 16:13:37-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  登录_手机号码_账号不存在  ----**********
+Mon, 21 Dec 2020 16:13:37-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/obtain_jwt_auth/
+Mon, 21 Dec 2020 16:13:37-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:37-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{'username': '18820982484', 'password': 'CUCO123456', 'region_code': 'CN', 'phone_code': '86'}
+Mon, 21 Dec 2020 16:13:38-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10012, "success": false, "msg": "Login account or password is incorrect", "time": 1608538419179, "data": {}}
+Mon, 21 Dec 2020 16:13:38-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   登录_手机号码_账号不存在---->pass
+Mon, 21 Dec 2020 16:13:38-test_api-test_api.py-[line:42]-INFO-[日志信息]: 检查点->："http_code": 400, "err_code": 10012, "success": false, "msg": "Login account or password is incorrect"
+Mon, 21 Dec 2020 16:13:38-test_api-test_api.py-[line:45]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10012, "success": false, "msg": "Login account or password is incorrect", "time": 1608538419179, "data": {}}
+Mon, 21 Dec 2020 16:13:38-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 16:13:38-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_手机号码_格式异常注册（区号与手机号不符）  ----**********
+Mon, 21 Dec 2020 16:13:38-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 16:13:38-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:38-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 16:13:38-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538419397, "data": {}}
+Mon, 21 Dec 2020 16:13:38-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_手机号码_格式异常注册（区号与手机号不符）---->pass
+Mon, 21 Dec 2020 16:13:38-test_api-test_api.py-[line:42]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 16:13:38-test_api-test_api.py-[line:45]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538419397, "data": {}}
+Mon, 21 Dec 2020 16:13:38-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 16:13:38-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_手机号码_格式异常注册（12位）  ----**********
+Mon, 21 Dec 2020 16:13:38-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 16:13:38-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:38-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 16:13:39-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538419608, "data": {}}
+Mon, 21 Dec 2020 16:13:39-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_手机号码_格式异常注册（12位）---->pass
+Mon, 21 Dec 2020 16:13:39-test_api-test_api.py-[line:42]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 16:13:39-test_api-test_api.py-[line:45]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538419608, "data": {}}
+Mon, 21 Dec 2020 16:13:39-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 16:13:39-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_手机号码_验证码错误  ----**********
+Mon, 21 Dec 2020 16:13:39-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 16:13:39-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:39-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 16:13:39-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538419823, "data": {}}
+Mon, 21 Dec 2020 16:13:39-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_手机号码_验证码错误---->pass
+Mon, 21 Dec 2020 16:13:39-test_api-test_api.py-[line:42]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 16:13:39-test_api-test_api.py-[line:45]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538419823, "data": {}}
+Mon, 21 Dec 2020 16:13:39-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 16:13:39-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_手机号码_密码为纯数字  ----**********
+Mon, 21 Dec 2020 16:13:39-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 16:13:39-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:39-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 16:13:39-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538420042, "data": {}}
+Mon, 21 Dec 2020 16:13:39-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_手机号码_密码为纯数字---->pass
+Mon, 21 Dec 2020 16:13:39-test_api-test_api.py-[line:42]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 16:13:39-test_api-test_api.py-[line:45]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538420042, "data": {}}
+Mon, 21 Dec 2020 16:13:39-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 16:13:39-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_手机号码_密码为纯字母  ----**********
+Mon, 21 Dec 2020 16:13:39-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 16:13:39-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:39-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 16:13:39-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538420258, "data": {}}
+Mon, 21 Dec 2020 16:13:39-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_手机号码_密码为纯字母---->pass
+Mon, 21 Dec 2020 16:13:39-test_api-test_api.py-[line:42]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 16:13:39-test_api-test_api.py-[line:45]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538420258, "data": {}}
+Mon, 21 Dec 2020 16:13:39-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 16:13:39-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_手机号码_密码为纯特殊符号  ----**********
+Mon, 21 Dec 2020 16:13:39-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 16:13:39-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:39-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 16:13:39-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538420468, "data": {}}
+Mon, 21 Dec 2020 16:13:39-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_手机号码_密码为纯特殊符号---->pass
+Mon, 21 Dec 2020 16:13:39-test_api-test_api.py-[line:42]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 16:13:39-test_api-test_api.py-[line:45]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538420468, "data": {}}
+Mon, 21 Dec 2020 16:13:39-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 16:13:39-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_手机号码_密码小于6字符  ----**********
+Mon, 21 Dec 2020 16:13:39-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 16:13:39-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:39-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 16:13:40-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538420687, "data": {}}
+Mon, 21 Dec 2020 16:13:40-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_手机号码_密码小于6字符---->pass
+Mon, 21 Dec 2020 16:13:40-test_api-test_api.py-[line:42]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 16:13:40-test_api-test_api.py-[line:45]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538420687, "data": {}}
+Mon, 21 Dec 2020 16:13:40-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 16:13:40-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_手机号码_密码大于32字符  ----**********
+Mon, 21 Dec 2020 16:13:40-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 16:13:40-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:40-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 16:13:40-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538420907, "data": {}}
+Mon, 21 Dec 2020 16:13:40-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_手机号码_密码大于32字符---->pass
+Mon, 21 Dec 2020 16:13:40-test_api-test_api.py-[line:42]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 16:13:40-test_api-test_api.py-[line:45]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538420907, "data": {}}
+Mon, 21 Dec 2020 16:13:40-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 16:13:40-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_手机号码_service_agreement条款未同意  ----**********
+Mon, 21 Dec 2020 16:13:40-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 16:13:40-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:40-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 16:13:40-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538421117, "data": {}}
+Mon, 21 Dec 2020 16:13:40-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_手机号码_service_agreement条款未同意---->pass
+Mon, 21 Dec 2020 16:13:40-test_api-test_api.py-[line:42]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 16:13:40-test_api-test_api.py-[line:45]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538421117, "data": {}}
+Mon, 21 Dec 2020 16:13:40-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 16:13:40-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_手机号码_privacy_policy条款未同意  ----**********
+Mon, 21 Dec 2020 16:13:40-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 16:13:40-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:40-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 16:13:40-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538421331, "data": {}}
+Mon, 21 Dec 2020 16:13:40-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_手机号码_privacy_policy条款未同意---->pass
+Mon, 21 Dec 2020 16:13:40-test_api-test_api.py-[line:42]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 16:13:40-test_api-test_api.py-[line:45]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538421331, "data": {}}
+Mon, 21 Dec 2020 16:13:40-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 16:13:40-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_手机号码_注册成功（数字字母特殊符号组合）  ----**********
+Mon, 21 Dec 2020 16:13:40-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 16:13:40-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:40-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 16:13:40-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538421544, "data": {}}
+Mon, 21 Dec 2020 16:13:40-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_手机号码_注册成功（数字字母特殊符号组合）---->pass
+Mon, 21 Dec 2020 16:13:41-test_api-test_api.py-[line:42]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 16:13:41-test_api-test_api.py-[line:45]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538421544, "data": {}}
+Mon, 21 Dec 2020 16:13:41-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 16:13:41-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_手机号码_账号已存在  ----**********
+Mon, 21 Dec 2020 16:13:41-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 16:13:41-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:41-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 16:13:41-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538421757, "data": {}}
+Mon, 21 Dec 2020 16:13:41-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_手机号码_账号已存在---->pass
+Mon, 21 Dec 2020 16:13:41-test_api-test_api.py-[line:42]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 16:13:41-test_api-test_api.py-[line:45]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538421757, "data": {}}
+Mon, 21 Dec 2020 16:13:41-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 16:13:41-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  登录_邮箱_账号不存在  ----**********
+Mon, 21 Dec 2020 16:13:41-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/obtain_jwt_auth/
+Mon, 21 Dec 2020 16:13:41-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:41-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{'username': 'JiangHuaQiang@gosund.com', 'password': 'CUCO123456', 'region_code': 'CN', 'phone_code': '86'}
+Mon, 21 Dec 2020 16:13:41-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10012, "success": false, "msg": "Login account or password is incorrect", "time": 1608538421980, "data": {}}
+Mon, 21 Dec 2020 16:13:41-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   登录_邮箱_账号不存在---->pass
+Mon, 21 Dec 2020 16:13:41-test_api-test_api.py-[line:42]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 16:13:41-test_api-test_api.py-[line:45]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10012, "success": false, "msg": "Login account or password is incorrect", "time": 1608538421980, "data": {}}
+Mon, 21 Dec 2020 16:13:41-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 16:13:41-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_邮箱_验证码超时  ----**********
+Mon, 21 Dec 2020 16:13:41-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 16:13:41-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:41-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 16:13:41-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538422194, "data": {}}
+Mon, 21 Dec 2020 16:13:41-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_邮箱_验证码超时---->pass
+Mon, 21 Dec 2020 16:13:41-test_api-test_api.py-[line:42]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 16:13:41-test_api-test_api.py-[line:45]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538422194, "data": {}}
+Mon, 21 Dec 2020 16:13:41-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 16:13:41-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_邮箱_格式异常注册（12位）  ----**********
+Mon, 21 Dec 2020 16:13:41-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 16:13:41-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:41-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 16:13:41-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538422407, "data": {}}
+Mon, 21 Dec 2020 16:13:41-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_邮箱_格式异常注册（12位）---->pass
+Mon, 21 Dec 2020 16:13:41-test_api-test_api.py-[line:42]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 16:13:41-test_api-test_api.py-[line:45]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538422407, "data": {}}
+Mon, 21 Dec 2020 16:13:41-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 16:13:41-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_邮箱_验证码错误  ----**********
+Mon, 21 Dec 2020 16:13:41-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 16:13:41-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:41-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 16:13:42-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538422620, "data": {}}
+Mon, 21 Dec 2020 16:13:42-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_邮箱_验证码错误---->pass
+Mon, 21 Dec 2020 16:13:42-test_api-test_api.py-[line:42]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 16:13:42-test_api-test_api.py-[line:45]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538422620, "data": {}}
+Mon, 21 Dec 2020 16:13:42-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 16:13:42-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_邮箱_密码为纯数字  ----**********
+Mon, 21 Dec 2020 16:13:42-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 16:13:42-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:42-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 16:13:42-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538422834, "data": {}}
+Mon, 21 Dec 2020 16:13:42-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_邮箱_密码为纯数字---->pass
+Mon, 21 Dec 2020 16:13:42-test_api-test_api.py-[line:42]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 16:13:42-test_api-test_api.py-[line:45]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538422834, "data": {}}
+Mon, 21 Dec 2020 16:13:42-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 16:13:42-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_邮箱_密码为纯字母  ----**********
+Mon, 21 Dec 2020 16:13:42-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 16:13:42-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:42-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 16:13:42-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538423047, "data": {}}
+Mon, 21 Dec 2020 16:13:42-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_邮箱_密码为纯字母---->pass
+Mon, 21 Dec 2020 16:13:42-test_api-test_api.py-[line:42]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 16:13:42-test_api-test_api.py-[line:45]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538423047, "data": {}}
+Mon, 21 Dec 2020 16:13:42-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 16:13:42-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_邮箱_密码为纯特殊符号  ----**********
+Mon, 21 Dec 2020 16:13:42-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 16:13:42-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:42-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 16:13:42-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538423270, "data": {}}
+Mon, 21 Dec 2020 16:13:42-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_邮箱_密码为纯特殊符号---->pass
+Mon, 21 Dec 2020 16:13:42-test_api-test_api.py-[line:42]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 16:13:42-test_api-test_api.py-[line:45]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538423270, "data": {}}
+Mon, 21 Dec 2020 16:13:42-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 16:13:42-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_邮箱_密码小于6字符  ----**********
+Mon, 21 Dec 2020 16:13:42-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 16:13:42-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:42-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 16:13:42-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538423489, "data": {}}
+Mon, 21 Dec 2020 16:13:42-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_邮箱_密码小于6字符---->pass
+Mon, 21 Dec 2020 16:13:42-test_api-test_api.py-[line:42]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 16:13:42-test_api-test_api.py-[line:45]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538423489, "data": {}}
+Mon, 21 Dec 2020 16:13:42-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 16:13:42-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_邮箱_密码大于32字符  ----**********
+Mon, 21 Dec 2020 16:13:42-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 16:13:42-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:42-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 16:13:43-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538423705, "data": {}}
+Mon, 21 Dec 2020 16:13:43-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_邮箱_密码大于32字符---->pass
+Mon, 21 Dec 2020 16:13:43-test_api-test_api.py-[line:42]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 16:13:43-test_api-test_api.py-[line:45]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538423705, "data": {}}
+Mon, 21 Dec 2020 16:13:43-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 16:13:43-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_邮箱_service_agreement条款未同意  ----**********
+Mon, 21 Dec 2020 16:13:43-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 16:13:43-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:43-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 16:13:43-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538423920, "data": {}}
+Mon, 21 Dec 2020 16:13:43-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_邮箱_service_agreement条款未同意---->pass
+Mon, 21 Dec 2020 16:13:43-test_api-test_api.py-[line:42]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 16:13:43-test_api-test_api.py-[line:45]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538423920, "data": {}}
+Mon, 21 Dec 2020 16:13:43-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 16:13:43-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_邮箱_privacy_policy条款未同意  ----**********
+Mon, 21 Dec 2020 16:13:43-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 16:13:43-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:43-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 16:13:43-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538424134, "data": {}}
+Mon, 21 Dec 2020 16:13:43-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_邮箱_privacy_policy条款未同意---->pass
+Mon, 21 Dec 2020 16:13:43-test_api-test_api.py-[line:42]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 16:13:43-test_api-test_api.py-[line:45]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538424134, "data": {}}
+Mon, 21 Dec 2020 16:13:43-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 16:13:43-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_邮箱_注册成功（数字字母特殊符号组合）  ----**********
+Mon, 21 Dec 2020 16:13:43-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 16:13:43-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:43-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 16:13:43-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538424347, "data": {}}
+Mon, 21 Dec 2020 16:13:43-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_邮箱_注册成功（数字字母特殊符号组合）---->pass
+Mon, 21 Dec 2020 16:13:43-test_api-test_api.py-[line:42]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 16:13:43-test_api-test_api.py-[line:45]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538424347, "data": {}}
+Mon, 21 Dec 2020 16:13:43-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 16:13:43-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_邮箱_账号已存在  ----**********
+Mon, 21 Dec 2020 16:13:43-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 16:13:43-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:43-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 16:13:43-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538424565, "data": {}}
+Mon, 21 Dec 2020 16:13:43-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_邮箱_账号已存在---->pass
+Mon, 21 Dec 2020 16:13:44-test_api-test_api.py-[line:42]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 16:13:44-test_api-test_api.py-[line:45]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608538424565, "data": {}}
+Mon, 21 Dec 2020 16:13:44-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 16:13:44-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  登录_手机号码_成功登录  ----**********
+Mon, 21 Dec 2020 16:13:44-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/obtain_jwt_auth/
+Mon, 21 Dec 2020 16:13:44-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:44-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{'username': '18820982484', 'password': 'CUCO123456', 'region_code': 'CN', 'phone_code': '86'}
+Mon, 21 Dec 2020 16:13:44-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10012, "success": false, "msg": "Login account or password is incorrect", "time": 1608538424795, "data": {}}
+Mon, 21 Dec 2020 16:13:44-test_api-test_api.py-[line:42]-INFO-[日志信息]: 检查点->："http_code": 200, "err_code": 0, "success": true
+Mon, 21 Dec 2020 16:13:44-test_api-test_api.py-[line:45]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10012, "success": false, "msg": "Login account or password is incorrect", "time": 1608538424795, "data": {}}
+Mon, 21 Dec 2020 16:13:44-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 16:13:44-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  登录_手机号码_账号密码不匹配  ----**********
+Mon, 21 Dec 2020 16:13:44-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/obtain_jwt_auth/
+Mon, 21 Dec 2020 16:13:44-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:44-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{'username': '18820982484', 'password': 'CUCO123456', 'region_code': 'CN', 'phone_code': '86'}
+Mon, 21 Dec 2020 16:13:44-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10011, "success": false, "msg": "Your login attempt is too frequent, please try again in 5 minutes", "time": 1608538425016, "data": {}}
+Mon, 21 Dec 2020 16:13:44-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   登录_手机号码_账号密码不匹配---->pass
+Mon, 21 Dec 2020 16:13:44-test_api-test_api.py-[line:42]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 16:13:44-test_api-test_api.py-[line:45]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10011, "success": false, "msg": "Your login attempt is too frequent, please try again in 5 minutes", "time": 1608538425016, "data": {}}
+Mon, 21 Dec 2020 16:13:44-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 16:13:44-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  登录_手机号码_格式异常登录（区号与手机号不符）  ----**********
+Mon, 21 Dec 2020 16:13:44-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/obtain_jwt_auth/
+Mon, 21 Dec 2020 16:13:44-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:44-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{'username': '18820982484', 'password': 'CUCO123456', 'region_code': 'CN', 'phone_code': '86'}
+Mon, 21 Dec 2020 16:13:44-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10011, "success": false, "msg": "Your login attempt is too frequent, please try again in 5 minutes", "time": 1608538425234, "data": {}}
+Mon, 21 Dec 2020 16:13:44-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   登录_手机号码_格式异常登录（区号与手机号不符）---->pass
+Mon, 21 Dec 2020 16:13:44-test_api-test_api.py-[line:42]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 16:13:44-test_api-test_api.py-[line:45]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10011, "success": false, "msg": "Your login attempt is too frequent, please try again in 5 minutes", "time": 1608538425234, "data": {}}
+Mon, 21 Dec 2020 16:13:44-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 16:13:44-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  登录_手机号码_格式异常登录（12位）  ----**********
+Mon, 21 Dec 2020 16:13:44-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/obtain_jwt_auth/
+Mon, 21 Dec 2020 16:13:44-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:44-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{'username': '18820982484', 'password': 'CUCO123456', 'region_code': 'CN', 'phone_code': '86'}
+Mon, 21 Dec 2020 16:13:44-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10011, "success": false, "msg": "Your login attempt is too frequent, please try again in 5 minutes", "time": 1608538425460, "data": {}}
+Mon, 21 Dec 2020 16:13:44-test_api-test_api.py-[line:42]-INFO-[日志信息]: 检查点->："http_code": 200, "err_code": 0, "success": true
+Mon, 21 Dec 2020 16:13:44-test_api-test_api.py-[line:45]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10011, "success": false, "msg": "Your login attempt is too frequent, please try again in 5 minutes", "time": 1608538425460, "data": {}}
+Mon, 21 Dec 2020 16:13:44-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  登录__账号被冻结  ----**********
+Mon, 21 Dec 2020 16:13:44-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：, 请求url:
+Mon, 21 Dec 2020 16:13:44-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:44-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 16:13:44-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 16:13:44-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  登录_邮箱_成功登录  ----**********
+Mon, 21 Dec 2020 16:13:44-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/obtain_jwt_auth/
+Mon, 21 Dec 2020 16:13:44-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:44-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{'username': 'JiangHuaQiang@gosund.com', 'password': 'CUCO123456', 'region_code': 'CN', 'phone_code': '86'}
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10012, "success": false, "msg": "Login account or password is incorrect", "time": 1608538425689, "data": {}}
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   登录_邮箱_成功登录---->pass
+Mon, 21 Dec 2020 16:13:45-test_api-test_api.py-[line:42]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 16:13:45-test_api-test_api.py-[line:45]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10012, "success": false, "msg": "Login account or password is incorrect", "time": 1608538425689, "data": {}}
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  登录_邮箱_账号密码不匹配  ----**********
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/obtain_jwt_auth/
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{'username': 'JiangHuaQiang@gosund.com', 'password': 'CUCO123456', 'region_code': 'CN', 'phone_code': '86'}
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10011, "success": false, "msg": "Your login attempt is too frequent, please try again in 5 minutes", "time": 1608538425908, "data": {}}
+Mon, 21 Dec 2020 16:13:45-test_api-test_api.py-[line:42]-INFO-[日志信息]: 检查点->："http_code": 200, "err_code": 0, "success": true
+Mon, 21 Dec 2020 16:13:45-test_api-test_api.py-[line:45]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10011, "success": false, "msg": "Your login attempt is too frequent, please try again in 5 minutes", "time": 1608538425908, "data": {}}
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  登录_邮箱_格式异常登录（没有@）  ----**********
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/obtain_jwt_auth/
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{'username': 'JiangHuaQiang@gosund.com', 'password': 'CUCO123456', 'region_code': 'CN', 'phone_code': '86'}
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10011, "success": false, "msg": "Your login attempt is too frequent, please try again in 5 minutes", "time": 1608538426128, "data": {}}
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   登录_邮箱_格式异常登录（没有@）---->pass
+Mon, 21 Dec 2020 16:13:45-test_api-test_api.py-[line:42]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 16:13:45-test_api-test_api.py-[line:45]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10011, "success": false, "msg": "Your login attempt is too frequent, please try again in 5 minutes", "time": 1608538426128, "data": {}}
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  登录_邮箱_格式异常登录（没有.com）  ----**********
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/obtain_jwt_auth/
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{'username': 'JiangHuaQiang@gosund.com', 'password': 'CUCO123456', 'region_code': 'CN', 'phone_code': '86'}
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10011, "success": false, "msg": "Your login attempt is too frequent, please try again in 5 minutes", "time": 1608538426368, "data": {}}
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   登录_邮箱_格式异常登录（没有.com）---->pass
+Mon, 21 Dec 2020 16:13:45-test_api-test_api.py-[line:42]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 16:13:45-test_api-test_api.py-[line:45]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10011, "success": false, "msg": "Your login attempt is too frequent, please try again in 5 minutes", "time": 1608538426368, "data": {}}
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  获取验证码_注册_手机号码_  ----**********
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：, 请求url:
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  获取验证码_  ----**********
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：, 请求url:
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  获取验证码_  ----**********
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：, 请求url:
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  获取验证码_  ----**********
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：, 请求url:
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  获取验证码_  ----**********
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：, 请求url:
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  获取验证码_  ----**********
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/resetpasswd/
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:45-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{'username': '15660964355', 'password': 'f123456', 'phone_code': '86', 'code': '201912'}
+Mon, 21 Dec 2020 16:13:46-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 200, "err_code": 0, "success": true, "msg": "", "time": 1608538426617, "data": {}}
+Mon, 21 Dec 2020 16:13:46-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   获取验证码_---->pass
+Mon, 21 Dec 2020 16:13:46-test_api-test_api.py-[line:42]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 16:13:46-test_api-test_api.py-[line:45]-INFO-[日志信息]: 返回实际结果->：{"http_code": 200, "err_code": 0, "success": true, "msg": "", "time": 1608538426617, "data": {}}
+Mon, 21 Dec 2020 16:13:46-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  获取验证码_  ----**********
+Mon, 21 Dec 2020 16:13:46-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：, 请求url:忘记密码
+Mon, 21 Dec 2020 16:13:46-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:46-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 16:13:46-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  获取验证码_  ----**********
+Mon, 21 Dec 2020 16:13:46-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：, 请求url:
+Mon, 21 Dec 2020 16:13:46-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:46-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 16:13:46-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  获取验证码_  ----**********
+Mon, 21 Dec 2020 16:13:46-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：, 请求url:
+Mon, 21 Dec 2020 16:13:46-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 16:13:46-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 20:08:44-mysql.py-mysql.py-[line:21]-INFO-[日志信息]: -----------------------连接数据库----------------------------------
+Mon, 21 Dec 2020 20:08:45-mysql.py-mysql.py-[line:39]-INFO-[日志信息]: -----------------------获取数据库数据-------------------------------
+Mon, 21 Dec 2020 20:08:45-mysql.py-mysql.py-[line:41]-INFO-[日志信息]: -----------------------提交事务-------------------------------
+Mon, 21 Dec 2020 20:08:45-mysql.py-mysql.py-[line:43]-INFO-[日志信息]: (132754, '20201205101559554523', '86-18680667585', '86-18680667585', '', '68526c379b6758818a832fc5d4b49c18h7y6bxc8', 1, 1, 1, 'CN', datetime.datetime(2020, 12, 5, 10, 15, 59, 913527), datetime.datetime(2020, 12, 21, 10, 56, 15, 95006))
+Mon, 21 Dec 2020 20:08:45-mysql.py-mysql.py-[line:39]-INFO-[日志信息]: -----------------------获取数据库数据-------------------------------
+Mon, 21 Dec 2020 20:08:45-mysql.py-mysql.py-[line:41]-INFO-[日志信息]: -----------------------提交事务-------------------------------
+Mon, 21 Dec 2020 20:08:45-mysql.py-mysql.py-[line:43]-INFO-[日志信息]: (132767, '20201219143201274436', 'JiangHuaQiang@gosund.com', '', 'JiangHuaQiang@gosund.com', 'a6e6cfeedc0ec6da823995550ca2b454xc7zlt4o', 1, 1, 1, 'CN', datetime.datetime(2020, 12, 19, 14, 32, 1, 115060), datetime.datetime(2020, 12, 19, 14, 32, 1, 115089))
+Mon, 21 Dec 2020 20:08:45-mysql.py-mysql.py-[line:49]-INFO-[日志信息]: -----------------------数据库操作完成---------------------------
+Mon, 21 Dec 2020 20:08:45-mysql.py-mysql.py-[line:55]-INFO-[日志信息]: -----------------------断开数据库----------------------------------
+Mon, 21 Dec 2020 20:28:44-run_Ghome_api_test.py-run_Ghome_api_test.py-[line:42]-INFO-[日志信息]: 开始执行脚本
+Mon, 21 Dec 2020 20:28:46-run_Ghome_api_test.py-mysql.py-[line:21]-INFO-[日志信息]: -----------------------连接数据库----------------------------------
+Mon, 21 Dec 2020 20:28:46-run_Ghome_api_test.py-mysql.py-[line:61]-INFO-[日志信息]: -----------------------断开数据库----------------------------------
+Mon, 21 Dec 2020 20:28:46-run_Ghome_api_test.py-run_Ghome_api_test.py-[line:30]-INFO-[日志信息]: 测试报告生成地址：D:\project\Ghome_api\report\result.html
+Mon, 21 Dec 2020 20:28:46-test_api-test_api.py-[line:34]-INFO-[日志信息]: -------------------删除账号-----------------------
+Mon, 21 Dec 2020 20:28:46-test_api-test_api.py-[line:41]-WARNING-[日志信息]: -------------------删除账号失败，请确认账号是否存在-----------
+Mon, 21 Dec 2020 20:28:46-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 20:28:46-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  登录_手机号码_账号不存在  ----**********
+Mon, 21 Dec 2020 20:28:46-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/obtain_jwt_auth/
+Mon, 21 Dec 2020 20:28:46-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:46-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{'username': '18820982484', 'password': 'CUCO123456', 'region_code': 'CN', 'phone_code': '86'}
+Mon, 21 Dec 2020 20:28:47-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10012, "success": false, "msg": "Login account or password is incorrect", "time": 1608553728100, "data": {}}
+Mon, 21 Dec 2020 20:28:47-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   登录_手机号码_账号不存在---->pass
+Mon, 21 Dec 2020 20:28:47-test_api-test_api.py-[line:54]-INFO-[日志信息]: 检查点->："http_code": 400, "err_code": 10012, "success": false, "msg": "Login account or password is incorrect"
+Mon, 21 Dec 2020 20:28:47-test_api-test_api.py-[line:57]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10012, "success": false, "msg": "Login account or password is incorrect", "time": 1608553728100, "data": {}}
+Mon, 21 Dec 2020 20:28:47-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 20:28:47-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_手机号码_格式异常注册（区号与手机号不符）  ----**********
+Mon, 21 Dec 2020 20:28:47-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 20:28:47-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:47-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 20:28:47-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553728315, "data": {}}
+Mon, 21 Dec 2020 20:28:47-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_手机号码_格式异常注册（区号与手机号不符）---->pass
+Mon, 21 Dec 2020 20:28:47-test_api-test_api.py-[line:54]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 20:28:47-test_api-test_api.py-[line:57]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553728315, "data": {}}
+Mon, 21 Dec 2020 20:28:47-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 20:28:47-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_手机号码_格式异常注册（12位）  ----**********
+Mon, 21 Dec 2020 20:28:47-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 20:28:47-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:47-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 20:28:47-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553728527, "data": {}}
+Mon, 21 Dec 2020 20:28:47-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_手机号码_格式异常注册（12位）---->pass
+Mon, 21 Dec 2020 20:28:47-test_api-test_api.py-[line:54]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 20:28:47-test_api-test_api.py-[line:57]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553728527, "data": {}}
+Mon, 21 Dec 2020 20:28:47-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 20:28:47-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_手机号码_验证码错误  ----**********
+Mon, 21 Dec 2020 20:28:47-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 20:28:47-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:47-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 20:28:47-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553728740, "data": {}}
+Mon, 21 Dec 2020 20:28:47-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_手机号码_验证码错误---->pass
+Mon, 21 Dec 2020 20:28:47-test_api-test_api.py-[line:54]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 20:28:47-test_api-test_api.py-[line:57]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553728740, "data": {}}
+Mon, 21 Dec 2020 20:28:47-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 20:28:47-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_手机号码_密码为纯数字  ----**********
+Mon, 21 Dec 2020 20:28:47-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 20:28:47-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:47-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 20:28:48-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553728952, "data": {}}
+Mon, 21 Dec 2020 20:28:48-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_手机号码_密码为纯数字---->pass
+Mon, 21 Dec 2020 20:28:48-test_api-test_api.py-[line:54]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 20:28:48-test_api-test_api.py-[line:57]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553728952, "data": {}}
+Mon, 21 Dec 2020 20:28:48-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 20:28:48-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_手机号码_密码为纯字母  ----**********
+Mon, 21 Dec 2020 20:28:48-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 20:28:48-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:48-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 20:28:48-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553729165, "data": {}}
+Mon, 21 Dec 2020 20:28:48-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_手机号码_密码为纯字母---->pass
+Mon, 21 Dec 2020 20:28:48-test_api-test_api.py-[line:54]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 20:28:48-test_api-test_api.py-[line:57]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553729165, "data": {}}
+Mon, 21 Dec 2020 20:28:48-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 20:28:48-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_手机号码_密码为纯特殊符号  ----**********
+Mon, 21 Dec 2020 20:28:48-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 20:28:48-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:48-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 20:28:48-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553729378, "data": {}}
+Mon, 21 Dec 2020 20:28:48-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_手机号码_密码为纯特殊符号---->pass
+Mon, 21 Dec 2020 20:28:48-test_api-test_api.py-[line:54]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 20:28:48-test_api-test_api.py-[line:57]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553729378, "data": {}}
+Mon, 21 Dec 2020 20:28:48-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 20:28:48-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_手机号码_密码小于6字符  ----**********
+Mon, 21 Dec 2020 20:28:48-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 20:28:48-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:48-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 20:28:48-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553729591, "data": {}}
+Mon, 21 Dec 2020 20:28:48-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_手机号码_密码小于6字符---->pass
+Mon, 21 Dec 2020 20:28:48-test_api-test_api.py-[line:54]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 20:28:48-test_api-test_api.py-[line:57]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553729591, "data": {}}
+Mon, 21 Dec 2020 20:28:48-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 20:28:48-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_手机号码_密码大于32字符  ----**********
+Mon, 21 Dec 2020 20:28:48-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 20:28:48-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:48-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 20:28:48-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553729805, "data": {}}
+Mon, 21 Dec 2020 20:28:48-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_手机号码_密码大于32字符---->pass
+Mon, 21 Dec 2020 20:28:49-test_api-test_api.py-[line:54]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 20:28:49-test_api-test_api.py-[line:57]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553729805, "data": {}}
+Mon, 21 Dec 2020 20:28:49-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 20:28:49-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_手机号码_service_agreement条款未同意  ----**********
+Mon, 21 Dec 2020 20:28:49-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 20:28:49-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:49-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 20:28:49-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553730022, "data": {}}
+Mon, 21 Dec 2020 20:28:49-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_手机号码_service_agreement条款未同意---->pass
+Mon, 21 Dec 2020 20:28:49-test_api-test_api.py-[line:54]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 20:28:49-test_api-test_api.py-[line:57]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553730022, "data": {}}
+Mon, 21 Dec 2020 20:28:49-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 20:28:49-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_手机号码_privacy_policy条款未同意  ----**********
+Mon, 21 Dec 2020 20:28:49-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 20:28:49-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:49-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 20:28:49-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553730236, "data": {}}
+Mon, 21 Dec 2020 20:28:49-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_手机号码_privacy_policy条款未同意---->pass
+Mon, 21 Dec 2020 20:28:49-test_api-test_api.py-[line:54]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 20:28:49-test_api-test_api.py-[line:57]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553730236, "data": {}}
+Mon, 21 Dec 2020 20:28:49-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 20:28:49-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_手机号码_注册成功（数字字母特殊符号组合）  ----**********
+Mon, 21 Dec 2020 20:28:49-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 20:28:49-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:49-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 20:28:49-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553730452, "data": {}}
+Mon, 21 Dec 2020 20:28:49-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_手机号码_注册成功（数字字母特殊符号组合）---->pass
+Mon, 21 Dec 2020 20:28:49-test_api-test_api.py-[line:54]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 20:28:49-test_api-test_api.py-[line:57]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553730452, "data": {}}
+Mon, 21 Dec 2020 20:28:49-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 20:28:49-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_手机号码_账号已存在  ----**********
+Mon, 21 Dec 2020 20:28:49-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 20:28:49-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:49-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 20:28:49-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553730668, "data": {}}
+Mon, 21 Dec 2020 20:28:49-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_手机号码_账号已存在---->pass
+Mon, 21 Dec 2020 20:28:49-test_api-test_api.py-[line:54]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 20:28:49-test_api-test_api.py-[line:57]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553730668, "data": {}}
+Mon, 21 Dec 2020 20:28:49-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 20:28:49-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  登录_邮箱_账号不存在  ----**********
+Mon, 21 Dec 2020 20:28:49-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/obtain_jwt_auth/
+Mon, 21 Dec 2020 20:28:49-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:49-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{'username': 'JiangHuaQiang@gosund.com', 'password': 'CUCO123456', 'region_code': 'CN', 'phone_code': '86'}
+Mon, 21 Dec 2020 20:28:50-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10012, "success": false, "msg": "Login account or password is incorrect", "time": 1608553730894, "data": {}}
+Mon, 21 Dec 2020 20:28:50-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   登录_邮箱_账号不存在---->pass
+Mon, 21 Dec 2020 20:28:50-test_api-test_api.py-[line:54]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 20:28:50-test_api-test_api.py-[line:57]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10012, "success": false, "msg": "Login account or password is incorrect", "time": 1608553730894, "data": {}}
+Mon, 21 Dec 2020 20:28:50-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 20:28:50-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_邮箱_验证码超时  ----**********
+Mon, 21 Dec 2020 20:28:50-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 20:28:50-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:50-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 20:28:50-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553731111, "data": {}}
+Mon, 21 Dec 2020 20:28:50-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_邮箱_验证码超时---->pass
+Mon, 21 Dec 2020 20:28:50-test_api-test_api.py-[line:54]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 20:28:50-test_api-test_api.py-[line:57]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553731111, "data": {}}
+Mon, 21 Dec 2020 20:28:50-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 20:28:50-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_邮箱_格式异常注册（12位）  ----**********
+Mon, 21 Dec 2020 20:28:50-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 20:28:50-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:50-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 20:28:50-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553731328, "data": {}}
+Mon, 21 Dec 2020 20:28:50-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_邮箱_格式异常注册（12位）---->pass
+Mon, 21 Dec 2020 20:28:50-test_api-test_api.py-[line:54]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 20:28:50-test_api-test_api.py-[line:57]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553731328, "data": {}}
+Mon, 21 Dec 2020 20:28:50-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 20:28:50-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_邮箱_验证码错误  ----**********
+Mon, 21 Dec 2020 20:28:50-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 20:28:50-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:50-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 20:28:50-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553731545, "data": {}}
+Mon, 21 Dec 2020 20:28:50-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_邮箱_验证码错误---->pass
+Mon, 21 Dec 2020 20:28:50-test_api-test_api.py-[line:54]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 20:28:50-test_api-test_api.py-[line:57]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553731545, "data": {}}
+Mon, 21 Dec 2020 20:28:50-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 20:28:50-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_邮箱_密码为纯数字  ----**********
+Mon, 21 Dec 2020 20:28:50-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 20:28:50-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:50-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 20:28:50-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553731762, "data": {}}
+Mon, 21 Dec 2020 20:28:50-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_邮箱_密码为纯数字---->pass
+Mon, 21 Dec 2020 20:28:50-test_api-test_api.py-[line:54]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 20:28:50-test_api-test_api.py-[line:57]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553731762, "data": {}}
+Mon, 21 Dec 2020 20:28:50-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 20:28:50-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_邮箱_密码为纯字母  ----**********
+Mon, 21 Dec 2020 20:28:50-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 20:28:50-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:50-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 20:28:51-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553731980, "data": {}}
+Mon, 21 Dec 2020 20:28:51-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_邮箱_密码为纯字母---->pass
+Mon, 21 Dec 2020 20:28:51-test_api-test_api.py-[line:54]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 20:28:51-test_api-test_api.py-[line:57]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553731980, "data": {}}
+Mon, 21 Dec 2020 20:28:51-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 20:28:51-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_邮箱_密码为纯特殊符号  ----**********
+Mon, 21 Dec 2020 20:28:51-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 20:28:51-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:51-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 20:28:51-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553732208, "data": {}}
+Mon, 21 Dec 2020 20:28:51-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_邮箱_密码为纯特殊符号---->pass
+Mon, 21 Dec 2020 20:28:51-test_api-test_api.py-[line:54]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 20:28:51-test_api-test_api.py-[line:57]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553732208, "data": {}}
+Mon, 21 Dec 2020 20:28:51-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 20:28:51-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_邮箱_密码小于6字符  ----**********
+Mon, 21 Dec 2020 20:28:51-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 20:28:51-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:51-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 20:28:51-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553732431, "data": {}}
+Mon, 21 Dec 2020 20:28:51-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_邮箱_密码小于6字符---->pass
+Mon, 21 Dec 2020 20:28:51-test_api-test_api.py-[line:54]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 20:28:51-test_api-test_api.py-[line:57]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553732431, "data": {}}
+Mon, 21 Dec 2020 20:28:51-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 20:28:51-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_邮箱_密码大于32字符  ----**********
+Mon, 21 Dec 2020 20:28:51-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 20:28:51-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:51-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 20:28:51-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553732649, "data": {}}
+Mon, 21 Dec 2020 20:28:51-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_邮箱_密码大于32字符---->pass
+Mon, 21 Dec 2020 20:28:51-test_api-test_api.py-[line:54]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 20:28:51-test_api-test_api.py-[line:57]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553732649, "data": {}}
+Mon, 21 Dec 2020 20:28:51-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 20:28:51-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_邮箱_service_agreement条款未同意  ----**********
+Mon, 21 Dec 2020 20:28:51-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 20:28:51-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:51-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 20:28:52-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553732867, "data": {}}
+Mon, 21 Dec 2020 20:28:52-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_邮箱_service_agreement条款未同意---->pass
+Mon, 21 Dec 2020 20:28:52-test_api-test_api.py-[line:54]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 20:28:52-test_api-test_api.py-[line:57]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553732867, "data": {}}
+Mon, 21 Dec 2020 20:28:52-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 20:28:52-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_邮箱_privacy_policy条款未同意  ----**********
+Mon, 21 Dec 2020 20:28:52-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 20:28:52-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:52-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 20:28:52-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553733089, "data": {}}
+Mon, 21 Dec 2020 20:28:52-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_邮箱_privacy_policy条款未同意---->pass
+Mon, 21 Dec 2020 20:28:52-test_api-test_api.py-[line:54]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 20:28:52-test_api-test_api.py-[line:57]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553733089, "data": {}}
+Mon, 21 Dec 2020 20:28:52-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 20:28:52-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_邮箱_注册成功（数字字母特殊符号组合）  ----**********
+Mon, 21 Dec 2020 20:28:52-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 20:28:52-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:52-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 20:28:52-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553733308, "data": {}}
+Mon, 21 Dec 2020 20:28:52-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_邮箱_注册成功（数字字母特殊符号组合）---->pass
+Mon, 21 Dec 2020 20:28:52-test_api-test_api.py-[line:54]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 20:28:52-test_api-test_api.py-[line:57]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553733308, "data": {}}
+Mon, 21 Dec 2020 20:28:52-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 20:28:52-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  注册_邮箱_账号已存在  ----**********
+Mon, 21 Dec 2020 20:28:52-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/users/
+Mon, 21 Dec 2020 20:28:52-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:52-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 20:28:52-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553733529, "data": {}}
+Mon, 21 Dec 2020 20:28:52-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   注册_邮箱_账号已存在---->pass
+Mon, 21 Dec 2020 20:28:52-test_api-test_api.py-[line:54]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 20:28:52-test_api-test_api.py-[line:57]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10000, "success": false, "msg": "code,\u8be5\u5b57\u6bb5\u662f\u5fc5\u586b\u9879\u3002", "time": 1608553733529, "data": {}}
+Mon, 21 Dec 2020 20:28:52-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 20:28:52-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  登录_手机号码_成功登录  ----**********
+Mon, 21 Dec 2020 20:28:52-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/obtain_jwt_auth/
+Mon, 21 Dec 2020 20:28:52-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:52-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{'username': '18820982484', 'password': 'CUCO123456', 'region_code': 'CN', 'phone_code': '86'}
+Mon, 21 Dec 2020 20:28:52-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10012, "success": false, "msg": "Login account or password is incorrect", "time": 1608553733774, "data": {}}
+Mon, 21 Dec 2020 20:28:53-test_api-test_api.py-[line:54]-INFO-[日志信息]: 检查点->："http_code": 200, "err_code": 0, "success": true
+Mon, 21 Dec 2020 20:28:53-test_api-test_api.py-[line:57]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10012, "success": false, "msg": "Login account or password is incorrect", "time": 1608553733774, "data": {}}
+Mon, 21 Dec 2020 20:28:53-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 20:28:53-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  登录_手机号码_账号密码不匹配  ----**********
+Mon, 21 Dec 2020 20:28:53-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/obtain_jwt_auth/
+Mon, 21 Dec 2020 20:28:53-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:53-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{'username': '18820982484', 'password': 'CUCO123456', 'region_code': 'CN', 'phone_code': '86'}
+Mon, 21 Dec 2020 20:28:53-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10012, "success": false, "msg": "Login account or password is incorrect", "time": 1608553734008, "data": {}}
+Mon, 21 Dec 2020 20:28:53-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   登录_手机号码_账号密码不匹配---->pass
+Mon, 21 Dec 2020 20:28:53-test_api-test_api.py-[line:54]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 20:28:53-test_api-test_api.py-[line:57]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10012, "success": false, "msg": "Login account or password is incorrect", "time": 1608553734008, "data": {}}
+Mon, 21 Dec 2020 20:28:53-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 20:28:53-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  登录_手机号码_格式异常登录（区号与手机号不符）  ----**********
+Mon, 21 Dec 2020 20:28:53-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/obtain_jwt_auth/
+Mon, 21 Dec 2020 20:28:53-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:53-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{'username': '18820982484', 'password': 'CUCO123456', 'region_code': 'CN', 'phone_code': '86'}
+Mon, 21 Dec 2020 20:28:53-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10012, "success": false, "msg": "Login account or password is incorrect", "time": 1608553734239, "data": {}}
+Mon, 21 Dec 2020 20:28:53-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   登录_手机号码_格式异常登录（区号与手机号不符）---->pass
+Mon, 21 Dec 2020 20:28:53-test_api-test_api.py-[line:54]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 20:28:53-test_api-test_api.py-[line:57]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10012, "success": false, "msg": "Login account or password is incorrect", "time": 1608553734239, "data": {}}
+Mon, 21 Dec 2020 20:28:53-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 20:28:53-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  登录_手机号码_格式异常登录（12位）  ----**********
+Mon, 21 Dec 2020 20:28:53-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/obtain_jwt_auth/
+Mon, 21 Dec 2020 20:28:53-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:53-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{'username': '18820982484', 'password': 'CUCO123456', 'region_code': 'CN', 'phone_code': '86'}
+Mon, 21 Dec 2020 20:28:53-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10012, "success": false, "msg": "Login account or password is incorrect", "time": 1608553734468, "data": {}}
+Mon, 21 Dec 2020 20:28:53-test_api-test_api.py-[line:54]-INFO-[日志信息]: 检查点->："http_code": 200, "err_code": 0, "success": true
+Mon, 21 Dec 2020 20:28:53-test_api-test_api.py-[line:57]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10012, "success": false, "msg": "Login account or password is incorrect", "time": 1608553734468, "data": {}}
+Mon, 21 Dec 2020 20:28:53-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  登录__账号被冻结  ----**********
+Mon, 21 Dec 2020 20:28:53-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：, 请求url:
+Mon, 21 Dec 2020 20:28:53-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:53-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 20:28:53-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 20:28:53-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  登录_邮箱_成功登录  ----**********
+Mon, 21 Dec 2020 20:28:53-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/obtain_jwt_auth/
+Mon, 21 Dec 2020 20:28:53-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:53-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{'username': 'JiangHuaQiang@gosund.com', 'password': 'CUCO123456', 'region_code': 'CN', 'phone_code': '86'}
+Mon, 21 Dec 2020 20:28:53-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10012, "success": false, "msg": "Login account or password is incorrect", "time": 1608553734706, "data": {}}
+Mon, 21 Dec 2020 20:28:53-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   登录_邮箱_成功登录---->pass
+Mon, 21 Dec 2020 20:28:53-test_api-test_api.py-[line:54]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 20:28:53-test_api-test_api.py-[line:57]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10012, "success": false, "msg": "Login account or password is incorrect", "time": 1608553734706, "data": {}}
+Mon, 21 Dec 2020 20:28:53-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 20:28:53-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  登录_邮箱_账号密码不匹配  ----**********
+Mon, 21 Dec 2020 20:28:53-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/obtain_jwt_auth/
+Mon, 21 Dec 2020 20:28:53-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:53-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{'username': 'JiangHuaQiang@gosund.com', 'password': 'CUCO123456', 'region_code': 'CN', 'phone_code': '86'}
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10012, "success": false, "msg": "Login account or password is incorrect", "time": 1608553734936, "data": {}}
+Mon, 21 Dec 2020 20:28:54-test_api-test_api.py-[line:54]-INFO-[日志信息]: 检查点->："http_code": 200, "err_code": 0, "success": true
+Mon, 21 Dec 2020 20:28:54-test_api-test_api.py-[line:57]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10012, "success": false, "msg": "Login account or password is incorrect", "time": 1608553734936, "data": {}}
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  登录_邮箱_格式异常登录（没有@）  ----**********
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/obtain_jwt_auth/
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{'username': 'JiangHuaQiang@gosund.com', 'password': 'CUCO123456', 'region_code': 'CN', 'phone_code': '86'}
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10012, "success": false, "msg": "Login account or password is incorrect", "time": 1608553735180, "data": {}}
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   登录_邮箱_格式异常登录（没有@）---->pass
+Mon, 21 Dec 2020 20:28:54-test_api-test_api.py-[line:54]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 20:28:54-test_api-test_api.py-[line:57]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10012, "success": false, "msg": "Login account or password is incorrect", "time": 1608553735180, "data": {}}
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:24]-INFO-[日志信息]: 请求头部：{'Content-Type': 'application/x-www-form-urlencoded', 'platform': 'huawei', 'lang': 'en'}
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  登录_邮箱_格式异常登录（没有.com）  ----**********
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/obtain_jwt_auth/
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{'username': 'JiangHuaQiang@gosund.com', 'password': 'CUCO123456', 'region_code': 'CN', 'phone_code': '86'}
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 400, "err_code": 10012, "success": false, "msg": "Login account or password is incorrect", "time": 1608553735411, "data": {}}
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   登录_邮箱_格式异常登录（没有.com）---->pass
+Mon, 21 Dec 2020 20:28:54-test_api-test_api.py-[line:54]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 20:28:54-test_api-test_api.py-[line:57]-INFO-[日志信息]: 返回实际结果->：{"http_code": 400, "err_code": 10012, "success": false, "msg": "Login account or password is incorrect", "time": 1608553735411, "data": {}}
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  获取验证码_注册_手机号码_  ----**********
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：, 请求url:
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  获取验证码_  ----**********
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：, 请求url:
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  获取验证码_  ----**********
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：, 请求url:
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  获取验证码_  ----**********
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：, 请求url:
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  获取验证码_  ----**********
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：, 请求url:
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  获取验证码_  ----**********
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：post, 请求url:https://test-feiot.gosund.com/v1.1/resetpasswd/
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{'username': '15660964355', 'password': 'f123456', 'phone_code': '86', 'code': '201912'}
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:65]-INFO-[日志信息]: 页面返回信息：{"http_code": 200, "err_code": 0, "success": true, "msg": "", "time": 1608553735645, "data": {}}
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:80]-INFO-[日志信息]: 用例测试结果:   获取验证码_---->pass
+Mon, 21 Dec 2020 20:28:54-test_api-test_api.py-[line:54]-INFO-[日志信息]: 检查点->：
+Mon, 21 Dec 2020 20:28:54-test_api-test_api.py-[line:57]-INFO-[日志信息]: 返回实际结果->：{"http_code": 200, "err_code": 0, "success": true, "msg": "", "time": 1608553735645, "data": {}}
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  获取验证码_  ----**********
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：, 请求url:忘记密码
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  获取验证码_  ----**********
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：, 请求url:
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:31]-INFO-[日志信息]: *******正在执行用例：-----  获取验证码_  ----**********
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:32]-INFO-[日志信息]: 请求方式：, 请求url:
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:33]-INFO-[日志信息]: 请求params：None
+Mon, 21 Dec 2020 20:28:54-Ghome_api.common.base_api-base_api.py-[line:52]-INFO-[日志信息]: post请求body类型为： ,body内容为：{}
+Mon, 21 Dec 2020 20:32:02-mysql.py-mysql.py-[line:21]-INFO-[日志信息]: -----------------------连接数据库----------------------------------
+Mon, 21 Dec 2020 20:32:02-mysql.py-mysql.py-[line:39]-INFO-[日志信息]: -----------------------获取数据库数据-------------------------------
+Mon, 21 Dec 2020 20:32:02-mysql.py-mysql.py-[line:41]-INFO-[日志信息]: -----------------------提交事务-------------------------------
+Mon, 21 Dec 2020 20:32:02-mysql.py-mysql.py-[line:43]-INFO-[日志信息]: (132754, '20201205101559554523', '86-18680667585', '86-18680667585', '', '68526c379b6758818a832fc5d4b49c18h7y6bxc8', 1, 1, 1, 'CN', datetime.datetime(2020, 12, 5, 10, 15, 59, 913527), datetime.datetime(2020, 12, 21, 10, 56, 15, 95006))
+Mon, 21 Dec 2020 20:32:02-mysql.py-mysql.py-[line:39]-INFO-[日志信息]: -----------------------获取数据库数据-------------------------------
+Mon, 21 Dec 2020 20:32:02-mysql.py-mysql.py-[line:41]-INFO-[日志信息]: -----------------------提交事务-------------------------------
+Mon, 21 Dec 2020 20:32:02-mysql.py-mysql.py-[line:43]-INFO-[日志信息]: (132767, '20201219143201274436', 'JiangHuaQiang@gosund.com', '', 'JiangHuaQiang@gosund.com', 'a6e6cfeedc0ec6da823995550ca2b454xc7zlt4o', 1, 1, 1, 'CN', datetime.datetime(2020, 12, 19, 14, 32, 1, 115060), datetime.datetime(2020, 12, 19, 14, 32, 1, 115089))
+Mon, 21 Dec 2020 20:32:02-mysql.py-mysql.py-[line:49]-INFO-[日志信息]: -----------------------数据库操作完成---------------------------
+Mon, 21 Dec 2020 20:32:02-mysql.py-mysql.py-[line:55]-INFO-[日志信息]: -----------------------断开数据库----------------------------------
+Mon, 21 Dec 2020 20:32:18-mysql.py-mysql.py-[line:21]-INFO-[日志信息]: -----------------------连接数据库----------------------------------
+Mon, 21 Dec 2020 20:32:19-mysql.py-mysql.py-[line:39]-INFO-[日志信息]: -----------------------获取数据库数据-------------------------------
+Mon, 21 Dec 2020 20:32:19-mysql.py-mysql.py-[line:41]-INFO-[日志信息]: -----------------------提交事务-------------------------------
+Mon, 21 Dec 2020 20:32:19-mysql.py-mysql.py-[line:43]-INFO-[日志信息]: (132754, '20201205101559554523', '86-18680667585', '86-18680667585', '', '68526c379b6758818a832fc5d4b49c18h7y6bxc8', 1, 1, 1, 'CN', datetime.datetime(2020, 12, 5, 10, 15, 59, 913527), datetime.datetime(2020, 12, 21, 10, 56, 15, 95006))
+Mon, 21 Dec 2020 20:32:19-mysql.py-mysql.py-[line:39]-INFO-[日志信息]: -----------------------获取数据库数据-------------------------------
+Mon, 21 Dec 2020 20:32:19-mysql.py-mysql.py-[line:41]-INFO-[日志信息]: -----------------------提交事务-------------------------------
+Mon, 21 Dec 2020 20:32:19-mysql.py-mysql.py-[line:43]-INFO-[日志信息]: (132767, '20201219143201274436', 'JiangHuaQiang@gosund.com', '', 'JiangHuaQiang@gosund.com', 'a6e6cfeedc0ec6da823995550ca2b454xc7zlt4o', 1, 1, 1, 'CN', datetime.datetime(2020, 12, 19, 14, 32, 1, 115060), datetime.datetime(2020, 12, 19, 14, 32, 1, 115089))
+Mon, 21 Dec 2020 20:32:19-mysql.py-mysql.py-[line:49]-INFO-[日志信息]: -----------------------数据库操作完成---------------------------
+Mon, 21 Dec 2020 20:32:19-mysql.py-mysql.py-[line:55]-INFO-[日志信息]: -----------------------断开数据库----------------------------------
+Mon, 21 Dec 2020 20:33:52-mysql.py-mysql.py-[line:23]-INFO-[日志信息]: -----------------------连接数据库----------------------------------
+Mon, 21 Dec 2020 20:33:52-mysql.py-mysql.py-[line:66]-INFO-[日志信息]: -------------------删除账号-----------------------
+Mon, 21 Dec 2020 20:33:52-mysql.py-mysql.py-[line:74]-WARNING-[日志信息]: -------------------删除账号失败，请确认账号是否存在-----------
+Mon, 21 Dec 2020 20:40:09-mysql.py-mysql.py-[line:23]-INFO-[日志信息]: -----------------------连接数据库----------------------------------
+Mon, 21 Dec 2020 20:40:09-mysql.py-mysql.py-[line:66]-INFO-[日志信息]: -------------------删除账号-----------------------
+Mon, 21 Dec 2020 20:40:09-mysql.py-mysql.py-[line:74]-WARNING-[日志信息]: -------------------删除账号失败，请确认账号是否存在-----------
+Mon, 21 Dec 2020 20:40:54-mysql.py-mysql.py-[line:23]-INFO-[日志信息]: -----------------------连接数据库----------------------------------
+Mon, 21 Dec 2020 20:40:54-mysql.py-mysql.py-[line:66]-INFO-[日志信息]: -------------------删除账号-----------------------
+Mon, 21 Dec 2020 20:40:54-mysql.py-mysql.py-[line:74]-WARNING-[日志信息]: -------------------删除账号失败，请确认账号是否存在-----------
+Mon, 21 Dec 2020 20:41:36-mysql.py-mysql.py-[line:23]-INFO-[日志信息]: -----------------------连接数据库----------------------------------
+Mon, 21 Dec 2020 20:41:36-mysql.py-mysql.py-[line:66]-INFO-[日志信息]: -------------------删除账号-----------------------
+Mon, 21 Dec 2020 20:41:36-mysql.py-mysql.py-[line:74]-WARNING-[日志信息]: -------------------删除账号失败，请确认账号是否存在-----------
+Mon, 21 Dec 2020 20:42:02-mysql.py-mysql.py-[line:23]-INFO-[日志信息]: -----------------------连接数据库----------------------------------
+Mon, 21 Dec 2020 20:42:02-mysql.py-mysql.py-[line:66]-INFO-[日志信息]: -------------------删除账号-----------------------
+Mon, 21 Dec 2020 20:42:02-mysql.py-mysql.py-[line:75]-WARNING-[日志信息]: -------------------删除账号失败，请确认账号是否存在-----------
+Mon, 21 Dec 2020 20:42:22-mysql.py-mysql.py-[line:23]-INFO-[日志信息]: -----------------------连接数据库----------------------------------
+Mon, 21 Dec 2020 20:42:22-mysql.py-mysql.py-[line:66]-INFO-[日志信息]: -------------------删除账号-----------------------
+Mon, 21 Dec 2020 20:42:22-mysql.py-mysql.py-[line:74]-WARNING-[日志信息]: -------------------删除账号失败，请确认账号是否存在-----------
+Mon, 21 Dec 2020 20:43:44-mysql.py-mysql.py-[line:23]-INFO-[日志信息]: -----------------------连接数据库----------------------------------
+Mon, 21 Dec 2020 20:43:44-mysql.py-mysql.py-[line:66]-INFO-[日志信息]: -------------------删除账号-----------------------
+Mon, 21 Dec 2020 20:45:19-mysql.py-mysql.py-[line:23]-INFO-[日志信息]: -----------------------连接数据库----------------------------------
+Mon, 21 Dec 2020 20:46:33-mysql.py-mysql.py-[line:23]-INFO-[日志信息]: -----------------------连接数据库----------------------------------
+Mon, 21 Dec 2020 20:46:46-mysql.py-mysql.py-[line:23]-INFO-[日志信息]: -----------------------连接数据库----------------------------------
+Mon, 21 Dec 2020 20:49:10-mysql.py-mysql.py-[line:23]-INFO-[日志信息]: -----------------------连接数据库----------------------------------
+Mon, 21 Dec 2020 20:49:26-mysql.py-mysql.py-[line:23]-INFO-[日志信息]: -----------------------连接数据库----------------------------------
+Mon, 21 Dec 2020 20:51:07-mysql.py-mysql.py-[line:23]-INFO-[日志信息]: -----------------------连接数据库----------------------------------
+Mon, 21 Dec 2020 20:51:59-mysql.py-mysql.py-[line:23]-INFO-[日志信息]: -----------------------连接数据库----------------------------------
+Mon, 21 Dec 2020 20:52:58-mysql.py-mysql.py-[line:23]-INFO-[日志信息]: -----------------------连接数据库----------------------------------

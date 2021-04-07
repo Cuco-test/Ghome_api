@@ -1,8 +1,9 @@
 # coding:utf-8
 from openpyxl import load_workbook
 import openpyxl,os
-from Ghome_api.common.logger import Log
-log = Log()
+from common.Logs import Log
+log = Log(__name__)
+logger = log.Logger
 
 def copy_excel(excelpath1, excelpath2):
     '''复制excek，把excelpath1数据复制到excelpath2'''

@@ -1,17 +1,7 @@
-# 预期结果
-expected = {'username':'kaishui'}
-# 实际结果
-result={
-    'code': 1 ,
-    'username':'kaishui',
-    'token':'ihbedvbwejhvkjvberkjvbkjgkesjvbbje'
-}
+from PIL import Image
 
-for key in testdata["checkpoint"]:
-    if (key in ["text"]) & (["text"] == ["checkpoint"]):
-        res["result"] = "pass"
-        print("用例测试结果:   %s---->%s" % (test_nub, res["result"]))
 
-    else:
-        res["result"] = "fail"
-        print("用例测试结果:   %s---->%s" % (test_nub, res["result"]))
+
+img=Image.open('D:\\project\\Ghome_api\\image\\test.png')
+img.show()
+#testgithub
