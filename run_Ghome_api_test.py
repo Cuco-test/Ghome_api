@@ -48,4 +48,4 @@ if __name__ == "__main__":
     logger.info("开始执行脚本")
     cases = add_case()
     run_case(cases)
-    # sendemail(reportpath)
+    sendemail(reportpath)
